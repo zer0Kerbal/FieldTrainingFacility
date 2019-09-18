@@ -1,0 +1,36 @@
+{
+	"NAME":"FieldTrainingFacility",
+	"URL":"https://raw.githubusercontent.com/zer0Kerbal/FieldTrainingFacility/FieldTrainingFacility.version",
+	"DOWNLOAD":"https://github.com/zer0Kerbal/FieldTrainingFacility/releases", "CHANGE_LOG_URL": "https://raw.githubusercontent.com/zer0Kerbal/FieldTrainingFacility/dev/changelog.md",
+    "GITHUB":
+    {
+        "USERNAME":"zer0Kerbal",
+        "REPOSITORY":"FieldTrainingFacility",
+        "ALLOW_PRE_RELEASE":false,
+    },
+	"VERSION":
+	{
+		"MAJOR":1,
+		"MINOR":0,
+		"PATCH":3,
+		"BUILD":4
+	},
+	"KSP_VERSION":
+	{
+		"MAJOR":1,
+		"MINOR":7,
+		"PATCH":3
+	},
+	"KSP_VERSION_MIN":
+	{
+		"MAJOR":1,
+		"MINOR":7,
+		"PATCH":1
+	},
+	"KSP_VERSION_MAX":
+	{
+		"MAJOR":1,
+		"MINOR":7,
+		"PATCH":9999
+	}
+}

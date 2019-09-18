@@ -1,0 +1,75 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Archive
+ *.zip
+ *.rar
+ *.7z
+*.zip
+
+# Unique
+*.atom
+
+# Office
+*.xls
+*.xlsx
+*.psd
+*.7z
+*.rar
+
+# Working files (copyright and shouldn't be included)
+*.dll
+*.zip
+*.mdb
+*.lock
+*.ide
+*.pdb
+*.cache
+*.txt
+Source/.vs/
+*.ide-wal
+*.suo
+/build/
+*.suo
+*.user
+_ReSharper.*/
+*.sdf
+bin/
+obj/
+Debug/
+Release/
+*.opensdf
+*.tlog
+*.log
+TestResult.xml
+*.VisualState.xml
