@@ -78,4 +78,5 @@ TestResult.xml
 buildRelease.bat
 deploy.bat
 *.sqlite
+
 *.json

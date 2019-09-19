@@ -43,7 +43,7 @@
         [KSPField]
         public float LandedFactor = 6f;
 
-        [KSPField(isPersistant = true, guiActive = true, guiName = "Training Status", groupName = "Training")]
+        [KSPField(isPersistant = true, guiActive = true, guiName = "Training Status", groupName = "Training", groupDisplayName = "Training", groupStartCollapsed = true)]
         public bool TrainingStatus = false;
 
         [KSPField(isPersistant = true)]
@@ -64,7 +64,7 @@
             }
         }
 
-        [KSPField(guiActive = false, groupName = "Training", groupDisplayName = "Training", groupStartCollapsed = true)]
+        [KSPField(guiActive = false, groupName = "Training")]
         public string BoardKerbal0;
         [KSPField(guiActive = false, groupName = "Training")]
         public string BoardKerbal1;
