@@ -43,13 +43,13 @@
         [KSPField]
         public float LandedFactor = 6f;
 
-        [KSPField(isPersistant = true, guiActive = true, guiName = "Training Status")]
+        [KSPField(isPersistant = true, guiActive = true, guiName = "Training Status", groupName = "Training")]
         public bool TrainingStatus = false;
 
         [KSPField(isPersistant = true)]
         public double LastTimeSigniture = -1;
 
-        [KSPEvent(guiActive = true, guiName = "Start Training")]
+        [KSPEvent(guiActive = true, guiName = "Start Training", groupName = "Training")]
         public void ToggleTraining()
         {
             if(TrainingStatus == false)
@@ -64,21 +64,21 @@
             }
         }
 
-        [KSPField(guiActive = false)]
+        [KSPField(guiActive = false, groupName = "Training", groupDisplayName = "Training", groupStartCollapsed = true)]
         public string BoardKerbal0;
-        [KSPField(guiActive = false)]
+        [KSPField(guiActive = false, groupName = "Training")]
         public string BoardKerbal1;
-        [KSPField(guiActive = false)]
+        [KSPField(guiActive = false, groupName = "Training")]
         public string BoardKerbal2;
-        [KSPField(guiActive = false)]
+        [KSPField(guiActive = false, groupName = "Training")]
         public string BoardKerbal3;
-        [KSPField(guiActive = false)]
+        [KSPField(guiActive = false, groupName = "Training")]
         public string BoardKerbal4;
-        [KSPField(guiActive = false)]
+        [KSPField(guiActive = false, groupName = "Training")]
         public string BoardKerbal5;
-        [KSPField(guiActive = false)]
+        [KSPField(guiActive = false, groupName = "Training")]
         public string BoardKerbal6;
-        [KSPField(guiActive = false)]
+        [KSPField(guiActive = false, groupName = "Training")]
         public string BoardKerbal7;
 
         public override void OnLoad(ConfigNode node)

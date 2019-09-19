@@ -5,6 +5,13 @@ VisualStudioVersion = 16.0.29230.47
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FieldTrainingFacility", "FieldTrainingFacility.csproj", "{F1E7665D-05FE-4267-85E8-FDA6D510628E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{51AF6BFB-F283-4724-872A-697C6B8F28D5}"
+	ProjectSection(SolutionItems) = preProject
+		..\buildRelease.bat = ..\buildRelease.bat
+		..\deploy.bat = ..\deploy.bat
+		..\FieldTrainingFacility.version = ..\FieldTrainingFacility.version
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

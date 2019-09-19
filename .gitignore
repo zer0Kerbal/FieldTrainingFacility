@@ -73,3 +73,9 @@ Release/
 *.log
 TestResult.xml
 *.VisualState.xml
+
+# internal tools
+buildRelease.bat
+deploy.bat
+*.sqlite
+*.json
