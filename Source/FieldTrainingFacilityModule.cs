@@ -1,6 +1,6 @@
 ﻿namespace FieldTrainingFacility
 {
-    public class FieldTrainingFacilityModule : PartModule
+    public class FieldTrainingFacility : PartModule
     {
         string[] trainingArr =
         {
@@ -43,7 +43,7 @@
         [KSPField]
         public float LandedFactor = 6f;
 
-        [KSPField(isPersistant = true, guiActive = true, guiName = "Training Status", groupName = "Training", groupDisplayName = "Training", groupStartCollapsed = true)]
+        [KSPField(isPersistant = true, guiActive = true, guiName = "Training Status", groupName = "Training", groupDisplayName = "Training Facility", groupStartCollapsed = true)]
         public bool TrainingStatus = false;
 
         [KSPField(isPersistant = true)]

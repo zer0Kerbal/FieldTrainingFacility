@@ -12,7 +12,7 @@ using System.Reflection;
 // As it is set up, the option is disabled, so in order to enable it, the player would have
 // to deliberately go in and change it
 //
-namespace ODFC
+namespace FieldTrainingFacility
 {
     // http://forum.kerbalspaceprogram.com/index.php?/topic/147576-modders-notes-for-ksp-12/#comment-2754813
     // search for "Mod integration into Stock Settings
