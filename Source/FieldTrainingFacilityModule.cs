@@ -368,5 +368,9 @@
 
             return true;
         }
+        public override string GetInfo()
+        {
+            return "Train Kerbals using time and Electric Charge.";
+        }
     }
 }
