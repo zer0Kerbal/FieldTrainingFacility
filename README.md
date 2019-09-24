@@ -38,16 +38,16 @@ Leveling up 'Immediately' is not realistic? Do you think Training needs time con
 ---
  Now then, someone like me will want to use both.
 Then, just install both of them. Result is shown below.
-FoeIXB6.png
+![Both Installed](https://i.imgur.com/FoeIXB6.png)
 
-Payment of science point(TL) will be reduced with training experiences(FTF).
+Payment of science point(Field Training Facility(`FTL`)) will be reduced with training experiences(Field Training Facility (`FTF`).
 
 For example - 
-Just using TL, Level 4 -> Level 5 consumes 640p of Science point.
+Just using FTL, Level 4 -> Level 5 consumes 640p of Science points.
 But Level 4(50% with FTF) -> Level 5 consumes just 320p of science point.
 If 90% with FTF? Just pay 64p of science point or wait some more days. you can get level 5 kerbalnaut.
 
 More training means less sci point needed, linearly.
 
-These two mod can co-work, It's because I created this thread. If you want one thing, you can install just one mod. If you want co-work of them, you can install both. 
+These two mod can co-operate. If you want one thing, you can install just one mod. If you want co-operation of them, you can install both. 
 
