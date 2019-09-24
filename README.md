@@ -35,3 +35,19 @@ You can tweak values by editing .cfg. If you want, you can add this module to ot
 
 Leveling up 'Immediately' is not realistic? Do you think Training needs time consuming? This mod will be answer for you. ![FieldTrainingFacility](https://github.com/zer0Kerbal/FieldTrainingFacility)
 
+---
+ Now then, someone like me will want to use both.
+Then, just install both of them. Result is shown below.
+FoeIXB6.png
+
+Payment of science point(TL) will be reduced with training experiences(FTF).
+
+For example - 
+Just using TL, Level 4 -> Level 5 consumes 640p of Science point.
+But Level 4(50% with FTF) -> Level 5 consumes just 320p of science point.
+If 90% with FTF? Just pay 64p of science point or wait some more days. you can get level 5 kerbalnaut.
+
+More training means less sci point needed, linearly.
+
+These two mod can co-work, It's because I created this thread. If you want one thing, you can install just one mod. If you want co-work of them, you can install both. 
+
