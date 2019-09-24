@@ -1,4 +1,17 @@
-# FieldTrainingFacility
+<!-- Readme.md v1.1
+Field Training Facility
+created: 23 Sep 19
+updated: 23 Sep 19 -->
+
+<!-- Download on SpaceDock or Github or Curseforge. Also available on CKAN. -->
+
+# Field Training Facility (FTF)
+![Mod Version](https://img.shields.io/github/v/release/zer0Kerbal/FieldTrainingFacility
+?include_prereleases) 
+![KSP 1.7.x](https://img.shields.io/badge/KSP%20version-1.7.x-66ccff.svg?style=flat-square) 
+![CKAN listed](https://img.shields.io/badge/CKAN-Indexed-brightgreen.svg) 
+![CC 4.0 BY-NC-SA](https://img.shields.io/badge/license-CC--4.0--BY--SA-lightgrey)
+
  This mod adds training center at laboratory. Paying science point, Gets kerbal experiences(stars).
  
 This mod provides Training system to your kerbalnauts.
@@ -50,4 +63,27 @@ If 90% with FTF? Just pay 64p of science point or wait some more days. you can g
 More training means less sci point needed, linearly.
 
 These two mod can co-operate. If you want one thing, you can install just one mod. If you want co-operation of them, you can install both. 
+---
+#### Dependencies
+ - ![Kerbal Space Program](https://kerbalspaceprogram.com) v1.7.3, ***may*** work on earlier versions
+ - ![Module Manager](http://forum.kerbalspaceprogram.com/index.php?/topic/50533-105-*)
+ 
+ #### Supports
+ - ![Field Training Lab](https://github.com/zer0Kerbal/HotBeverageIrradiated)
+ - ![Kerbal Change Log](https://forum.kerbalspaceprogram.com/index.php?/topic/179207-*)
+
+ #### Suggests *(These mods have Fuel Cells that can benefit from ODFC)*:
+ - ![Field Training Lab](https://github.com/zer0Kerbal/HotBeverageIrradiated)
+ - ![Better Science Labs](http://forum.kerbalspaceprogram.com/index.php?/topic/122020-*)
+ - ![ODFC](https://forum.kerbalspaceprogram.com/index.php?/topic/177385-*)
+ - ![KGEx (coming soon)]()
+
+ #### Does not work with parts from
+ - none known
+
+ #### Conflicts:
+ - ![]() >-- ORIGINAL (outdated)--<
+
+#### Tags
+- training, mod, 
 
