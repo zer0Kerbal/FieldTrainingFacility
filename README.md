@@ -6,8 +6,7 @@ updated: 23 Sep 19 -->
 <!-- Download on SpaceDock or Github or Curseforge. Also available on CKAN. -->
 
 # Field Training Facility (FTF)
-![Mod Version](https://img.shields.io/github/v/release/zer0Kerbal/FieldTrainingFacility
-?include_prereleases) 
+![Mod Version](https://img.shields.io/github/v/release/zer0Kerbal/FieldTrainingFacility?include_prereleases) 
 ![KSP 1.7.x](https://img.shields.io/badge/KSP%20version-1.7.x-66ccff.svg?style=flat-square) 
 ![CKAN listed](https://img.shields.io/badge/CKAN-Indexed-brightgreen.svg) 
 ![CC 4.0 BY-NC-SA](https://img.shields.io/badge/license-CC--4.0--BY--SA-lightgrey)
