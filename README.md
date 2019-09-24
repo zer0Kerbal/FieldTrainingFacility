@@ -11,12 +11,11 @@ updated: 23 Sep 19 -->
 ![CKAN listed](https://img.shields.io/badge/CKAN-Indexed-brightgreen.svg) 
 ![CC 4.0 BY-NC-SA](https://img.shields.io/badge/license-CC--4.0--BY--SA-lightgrey)
 
- This mod adds training center at laboratory. Paying science point, Gets kerbal experiences(stars).
+This mod provides a Training system to your kerbalnauts by adding a training center into all science laboratories. Pay science points gets a kerbal experience(stars).
  
-This mod provides Training system to your kerbalnauts.
 ~(KPBS Supported)~ Patch now adds a Field Training Facility to all parts with a science lab.
 
-This mod is similar with Training Laboratory, But one thing is different. It consumes Time and Electric Charge.
+This mod is similar with Feild Training Laboratory (and cooperates with FTL), But one thing is different. It consumes Time and Electric Charge.
 
 If you want level 5 kerbalnaut from level 0, You need to train your kerbal for 1 year. Becoming level 1 will only need to wait 13 days, But as you know, high level needs more training.
 
