@@ -1,7 +1,7 @@
-<!-- Readme.md v1.1
+<!-- Readme.md v1.1.1
 Field Training Facility
 created: 23 Sep 19
-updated: 23 Sep 19 -->
+updated: 10 Oct 19 -->
 
 <!-- Download on SpaceDock or Github or Curseforge. Also available on CKAN. -->
 
@@ -9,8 +9,7 @@ updated: 23 Sep 19 -->
 ![Mod Version](https://img.shields.io/github/v/release/zer0Kerbal/FieldTrainingFacility?include_prereleases) 
 ![KSP 1.7.x](https://img.shields.io/badge/KSP%20version-1.7.x-66ccff.svg?style=flat-square) 
 ![CKAN listed](https://img.shields.io/badge/CKAN-Indexed-brightgreen.svg) 
-![Software License GPLv3](https://img.shields.io/badge/SoftwareLicense-GPLv3-red) 
-![NonSoftware License CC 4.0 BY-NC-SA](https://img.shields.io/badge/NonSoftwareLicense-CC--4.0--BY--SA-lightgrey)
+![License MIT](https://img.shields.io/badge/license-MIT-red)
 
 This mod provides a Training system to your kerbalnauts by adding a training center into all science laboratories. Pay science points gets a kerbal experience(stars).
  
