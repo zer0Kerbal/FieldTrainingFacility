@@ -11,7 +11,7 @@ updated: 10 Oct 19 -->
 ![CKAN listed](https://img.shields.io/badge/CKAN-Indexed-brightgreen.svg) 
 ![License MIT](https://img.shields.io/badge/license-MIT-red)
 
-This mod provides a Training system to your kerbalnauts by adding a training center into all science laboratories. It consumes Time and Electric Charge.
+This mod provides a Training system to your kerbalnauts by adding a training center into all science laboratories. Training consumes Time and Electric Charge.
  
 ~(KPBS Supported)~ Patch now adds a Field Training Facility to all parts with a science lab.
 
