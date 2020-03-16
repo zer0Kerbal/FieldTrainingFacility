@@ -1,4 +1,4 @@
-# Prerequisites
+﻿# Prerequisites
 *.d
 
 # Compiled Object files
@@ -30,54 +30,62 @@
 *.exe
 *.out
 *.app
+*.bat
 
-# Archive
- *.zip
- *.rar
- *.7z
+# Compressed
+*.rar
 *.zip
+*.7z
+*.tar
 
-# Unique
-*.atom
-
-# Office
+# Documents
+*.markdown
+*.doc
+*.docx
 *.xls
 *.xlsx
-*.psd
-*.7z
-*.rar
 
-# Working files (copyright and shouldn't be included)
-*.dll
-*.zip
+
+
+# zer0Kerbal common files
+LegalMumboJumbo/
+Archive/
+Old/
+flaticons/
+Links/
+docs/*
+old/*
+NetKAN/*
+images.txt
+shields.md
+buildRelease.bat
+buildReleaseSub.bat
+deploy.bat
+deploySub.bat
+_buildRelease.bat
+_buildReleaseSub.bat
+_deploy.bat
+_deploySub.bat
+mod.version
+regex4loc.txt
+
+# database files
 *.mdb
 *.lock
 *.ide
 *.pdb
 *.cache
-*.txt
-Source/.vs/
+
+# visualStudio files
+.vs/*
 *.ide-wal
 *.suo
-/build/
-*.suo
+build/*
 *.user
-_ReSharper.*/
-*.sdf
-bin/
+_ReSharper.*/*
 obj/
-Debug/
-Release/
 *.opensdf
 *.tlog
 *.log
 TestResult.xml
-*.VisualState.xml
 
-# internal tools
-buildRelease.bat
-deploy.bat
-*.sqlite
-
-*.json
-EFour.png
