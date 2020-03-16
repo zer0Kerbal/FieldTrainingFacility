@@ -33,10 +33,10 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="$(DevDir181)\KSP_x64_Data\Managed\Assembly-CSharp.dll" >
+    <Reference Include="$(DevDir181)\KSP_x64_Data\Managed\Assembly-CSharp*.dll" >
       <Private>False</Private>
     </Reference>
-    <Reference Include="$(DevDir181)\KSP_x64_Data\Managed\UnityEngine.dll" >
+    <Reference Include="$(DevDir181)\KSP_x64_Data\Managed\UnityEngine*.dll" >
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
