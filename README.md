@@ -74,7 +74,7 @@ These two mod can co-operate. Install just one if you want one thing. Install bo
  - ![Field Training Lab](https://github.com/zer0Kerbal/HotBeverageIrradiated)
  - ![Kerbal Change Log](https://forum.kerbalspaceprogram.com/index.php?/topic/179207-*)
 
- #### Suggests *(These mods have Fuel Cells that can benefit from ODFC)*:
+ #### Suggests:
  - ![Field Training Lab](https://github.com/zer0Kerbal/FieldTrainingLab)
  - ![Better Science Labs](http://forum.kerbalspaceprogram.com/index.php?/topic/122020-*)
  - ![ODFC](https://forum.kerbalspaceprogram.com/index.php?/topic/177385-*)
