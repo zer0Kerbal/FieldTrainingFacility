@@ -139,16 +139,16 @@ License: ![License MIT][shield:license] ![][LOGO:mit]
 [image:rel-curseforge-sm]: https://i.postimg.cc/ZRVTSWKT/UVVt0OP.png
   
 [shield:mod:latest]: https://img.shields.io/github/v/release/zer0Kerbal/FieldTrainingFacility?include_prereleases?style=plastic
-[shield:mod]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/FieldTrainingFacility/master/json/mod.json
-[shield:ksp]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/FieldTrainingFacility/master/json/ksp.json
-[shield:license]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/FieldTrainingFacility/master/json/license.json
+[shield:mod]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/FieldTrainingFacility/master/json/mod.json  
+[shield:ksp]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/FieldTrainingFacility/master/json/ksp.json  
+[shield:license]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/FieldTrainingFacility/master/json/license.json  
 [shield:code]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/FieldTrainingFacility/master/json/code.json  
-[shield:kspavc]:     https://img.shields.io/badge/KSP-AVC--supported-brightgreen.svg?style=plastic
-[shield:spacedock]:  https://img.shields.io/badge/SpaceDock-listed-blue.svg?style=plastic
-[shield:ckan]:       https://img.shields.io/badge/CKAN-Indexed-blue.svg?style=plastic
-[shield:github]:     https://img.shields.io/badge/Github-Indexed-blue.svg?style=plastic&logo=github
+[shield:kspavc]:     https://img.shields.io/badge/KSP-AVC--supported-brightgreen.svg?style=plastic  
+[shield:spacedock]:  https://img.shields.io/badge/SpaceDock-listed-blue.svg?style=plastic  
+[shield:ckan]:       https://img.shields.io/badge/CKAN-Indexed-blue.svg?style=plastic  
+[shield:github]:     https://img.shields.io/badge/Github-Indexed-blue.svg?style=plastic&logo=github  
 [shield:curseforge]: https://img.shields.io/badge/CurseForge-listed-blue.svg?style=plastic  
-[shield:avcvalid]:    https://github.com/zer0Kerbal/FieldTrainingFacility/workflows/Validate%20AVC%20.version%20files/badge.svg
+[shield:avcvalid]:    https://github.com/zer0Kerbal/FieldTrainingFacility/workflows/Validate%20AVC%20.version%20files/badge.svg  
 
 <!-- zer0Kerbal mods -->
 [thread:ODFC]: https://forum.kerbalspaceprogram.com/index.php?/topic/187625-* "On Demand Fuel Cells"
