@@ -1,4 +1,14 @@
-﻿namespace FieldTrainingFacility
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using UnityEngine;
+using KSP;
+using KSPAssets;
+using KSP.Localization;
+using System.Web.UI.WebControls.WebParts;
+
+namespace FieldTrainingFacility
 {
     public class FieldTrainingFacility : PartModule
     {
@@ -29,7 +39,8 @@
         string[] levelNumber = { "null", "1st", "2nd", "3rd", "4th", "5th" };
 
         ProtoCrewMember[] crewArr = new ProtoCrewMember[8];
-        int crewCnt = 0;
+        int crewCnt = 0,
+            maxCrew = 0;
 
         [KSPField]
         public float TimeFactor = 426 * 6 * 60 * 60; // 1Year = 426day, 1day = 6hour, 1hour = 60minutes, 1min = 60sec
@@ -43,7 +54,7 @@
         [KSPField]
         public float LandedFactor = 6f;
 
-        [KSPField(isPersistant = true, guiActive = true, guiName = "Training Status", groupName = "Training", groupDisplayName = "Training Facility", groupStartCollapsed = true)]
+        [KSPField(isPersistant = true, guiActive = true, guiName = "Training Status", groupName = "Training", groupDisplayName = "Training Facility " + Version.Text, groupStartCollapsed = true)]
         public bool TrainingStatus = false;
 
         [KSPField(isPersistant = true)]
@@ -58,10 +69,7 @@
                 LastTimeSigniture = Planetarium.GetUniversalTime();
                 Events["ToggleTraining"].guiName = "Stop Training";
             }
-            else
-            {
-                stopTraining();
-            }
+            else stopTraining();
         }
 
         [KSPField(guiActive = false, groupName = "Training")]
@@ -86,6 +94,7 @@
             base.OnLoad(node);
 
             if(TrainingStatus == true) Events["ToggleTraining"].guiName = "Stop Training";
+            maxCrew = part.CrewCapacity;
         }
 
         public void FixedUpdate()
@@ -369,35 +378,49 @@
             return true;
         }
 
+        /// <summary>Converts consumption rate into /s /m /hour and returns a formate string.</summary>
+        /// <param name="Rate">The rate.</param>
+        /// <returns>RateString="Rate"</returns>
+        private static string RateString(double rate)
+        {
+            //  double rate = double.Parse(value.value);
+            string sfx = "/s";
+            if (rate <= 0.004444444f)
+            {
+                rate *= 3600;
+                sfx = "/h";
+            }
+            else if (rate < 0.2666667f)
+            {
+                rate *= 60;
+                sfx = "/m";
+            }
+            // limit decimal places to 10 and add sfx
+            //return String.Format(FuelRateFormat, Rate, sfx);
+            return rate.ToString("###.#####") + " EC" + sfx;
+        }
         /// <summary>Module information shown in editors</summary>
         private string info = string.Empty;
 
         public override string GetInfo()
         {
+            //? this is what is show in the editor
+            //? As annoying as it is, pre-parsing the config MUST be done here, because this is called during part loading.
+            //? The config is only fully parsed after everything is fully loaded (which is why it's in OnStart())
             if (info == string.Empty)
-            {
-                info = Localizer.Format("#FieldTrainingFacility_titl");
-                info += "\n\nManufactured by: ";
-                info += Localizer.Format("#FieldTrainingFacility_manu");
-                info += "/s\n<color=#99FF00FF>"; 
-                info += Localizer.Format("#FieldTrainingFacility_desc");
-                info += "/s\n<color=#99FF00FF>Consumes: "; 
-                info += Localizer.Format("#autoLOC_252004");
-                info += "/s\n</color><color=#FFFF00FF>Per Crew: " + ECFactor;
-                info += "/s\n Max:" + (crewCnt * ECFactor);
-                info += "/s</color> "; 
-
-// #autoLOC_252004 = ElectricCharge
-// #FieldTrainingFacility_titl = FieldTrainingFacility
-// #FieldTrainingFacility_manu = Biff Industries, Inc.
-// #FieldTrainingFacility_desc = In-flight biome identifier 
-// #FieldTrainingFacility_tags = sensor biome FieldTrainingFacility science
-
+            {   
+                info += Localizer.Format("#FieldTrainingFacility_manu"); // #FieldTrainingFacility_manu = Kerbalnaut Training Industries, Inc.
+                info += "\n v" + Version.Text; // FTF Version Number text
+                info += "\n<color=#b4d455FF>" + Localizer.Format("#FieldTrainingFacility_desc"); // #FieldTrainingFacility_desc = Train Kerbals using time and Electric Charge
+                info += "\n\n<color=orange>Requires:</color> \n - <color=white><b>" + Localizer.Format("#autoLOC_252004"); // #autoLOC_252004 = ElectricCharge
+                info += "</b>: \n <color=#99FF00FF>  - Per Crew: </b></color><color=white>" + RateString(ECFactor) + " </color>";
+                info += "</b>: \n <color=#99FF00FF>  - Max Crew: </b></color><color=white>" + RateString(maxCrew * ECFactor) + "</color>";
             }
-
+            // #autoLOC_252004 = ElectricCharge
+            // #FieldTrainingFacility_titl = FieldTrainingFacility
+            // #FieldTrainingFacility_manu = Kerbalnaut Training Industries, Inc.
+            // #FieldTrainingFacility_desc = Train Kerbals using time and Electric Charge
             return info;
-
-            //return "Train Kerbals using time and Electric Charge.";
         }
     }
 }

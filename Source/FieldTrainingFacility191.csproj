@@ -38,20 +38,18 @@
     <Reference Include="$(DevDir19)\KSP_x64_Data\Managed\UnityEngine*.dll">
       <Private>False</Private>
     </Reference>
-    <Reference Include="$(DevDir19)\KSP_x64_Data\Managed\*.dll">
-      <Private>False</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FieldTrainingFacilityModule.cs" />
-    <Compile Include="InstallChecker.cs" />
     <Compile Include="Log.cs" />
+    <Compile Include="InstallChecker.cs" />
+    <Compile Include="FieldTrainingFacilityModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\AssemblyVersion.cs">
       <AutoGen>True</AutoGen>

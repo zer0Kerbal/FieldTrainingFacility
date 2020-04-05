@@ -11,9 +11,9 @@ namespace FieldTrainingFacility
         public const int build = 0;
         public const string Number = "1.2.0.0";
 #if DEBUG
-        public const string Text = Number + " BETA DEBUG";
+        public const string Text = Number + " DEBUG";
 #else
-        public const string Text = Number + " BETA";
+        public const string Text = Number + "";
 #endif
     }
 }
