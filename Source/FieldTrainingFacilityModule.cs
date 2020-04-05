@@ -368,9 +368,36 @@
 
             return true;
         }
+
+        /// <summary>Module information shown in editors</summary>
+        private string info = string.Empty;
+
         public override string GetInfo()
         {
-            return "Train Kerbals using time and Electric Charge.";
+            if (info == string.Empty)
+            {
+                info = Localizer.Format("#FieldTrainingFacility_titl");
+                info += "\n\nManufactured by: ";
+                info += Localizer.Format("#FieldTrainingFacility_manu");
+                info += "/s\n<color=#99FF00FF>"; 
+                info += Localizer.Format("#FieldTrainingFacility_desc");
+                info += "/s\n<color=#99FF00FF>Consumes: "; 
+                info += Localizer.Format("#autoLOC_252004");
+                info += "/s\n</color><color=#FFFF00FF>Per Crew: " + ECFactor;
+                info += "/s\n Max:" + (crewCnt * ECFactor);
+                info += "/s</color> "; 
+
+// #autoLOC_252004 = ElectricCharge
+// #FieldTrainingFacility_titl = FieldTrainingFacility
+// #FieldTrainingFacility_manu = Biff Industries, Inc.
+// #FieldTrainingFacility_desc = In-flight biome identifier 
+// #FieldTrainingFacility_tags = sensor biome FieldTrainingFacility science
+
+            }
+
+            return info;
+
+            //return "Train Kerbals using time and Electric Charge.";
         }
     }
 }
