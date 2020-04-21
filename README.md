@@ -83,6 +83,7 @@ More training means less science points needed, linearly.
 [![How to get support][image:get-support]][thread:getsupport]
 
 [![][UTUBE:img]][UTUBE:link]
+Support [@Kottabos][LINK:kottabos] on [Patreon][LINK:patreon:kottabos] 
 
 ### License
 #### aka Legal Mumbo Jumbo
@@ -198,6 +199,8 @@ License: ![License MIT][shield:license] ![][LOGO:mit]
 
 [UTUBE:img]:  https://img.youtube.com/vi/-_IweZIT7OI/0.jpg  
 [UTUBE:link]: https://youtu.be/-_IweZIT7OI "Kottabo Talks Field Training Facility"  
+[LINK:patreon:kottabos]: https://www.patreon.com/Kottabosgames "Kottabos Games Patreon" 
+[LINK:kottabos]: https://forum.kerbalspaceprogram.com/index.php?/profile/36583-kottabos/ "Kottabos on KSP Forums"  
 
 
 [^1]: *Be Kind: Lithobrake, not jakebrake! Keep your Module Manager up to date*  
