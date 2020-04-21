@@ -50,7 +50,7 @@ More training means less science points needed, linearly.
 ### Dependencies
 - [x] [Kerbal Space Program][KSP:website] [![][shield:ksp]][KSP:website] ***may*** work on other versions (YMMV)
 - [x] [Module Manager][thread:mm] [^2]
-### Recomends  
+### Recommends  
 - [x] [Field Training Lab (FTL)][thread:FTL]  
 ## Suggests
 - [x] [On Demand Fuel Cells {ODFC)}][thread:ODFC]  
