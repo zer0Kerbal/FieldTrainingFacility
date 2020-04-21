@@ -72,7 +72,7 @@ More training means less science points needed, linearly.
 - [x] [SimpleConstructon!][thread:SC!]  
 - [x] [Not So SimpleConstructon!][thread:NSSC]  
 ### Supports
-- [x] [Kerbal Change Log][thread:kcl]  
+- [x] [Kerbal Changelog][thread:kcl]  
 - [x] [Kerbal Planetary Base Systems][thread:kpbs]  
 ### Conflicts
 - [x] none known
@@ -81,8 +81,9 @@ More training means less science points needed, linearly.
 ***  
 *red box below is a link to forum post on how to get support*  
 [![How to get support][image:get-support]][thread:getsupport]
-
-[![][UTUBE:img]][UTUBE:link]
+  
+###  Youtube Review by [@Kottabos Gaming][LINK:kottabos] 
+[![][UTUBE:img]][UTUBE:link]  
 Support [@Kottabos][LINK:kottabos] on [Patreon][LINK:patreon:kottabos] 
 
 ### License
