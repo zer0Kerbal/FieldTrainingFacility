@@ -3,8 +3,6 @@ Field Training Facility
 created: 23 Sep 19
 updated: 2020 03 22 -->
 
-## Download on [SpaceDock][MOD:rel-spacedock] or [Github][MOD:rel-github] or [Curseforge][MOD:rel-curseforge]. Also available on [CKAN][MOD:rel-ckan].  
-
 # Field Training Facility (FTF)
 ### Adopted by [@zer0Kerbal][LINK:zer0kerbal] with continued support from the community.  
 #### formerly by [@Efour][LINK:efour]  
