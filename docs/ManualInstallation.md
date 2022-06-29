@@ -17,7 +17,7 @@ updated: 18 Apr 2022 -->
 
 [Home](./index.md)
 
-`BLURB`
+This addon provides a Training system for your kerbalnauts by adding a training center to all science laboratories. Training consumes Time and Electric Charge. For Kerbal Space Program.
 
 ## Installation Instructions
 
