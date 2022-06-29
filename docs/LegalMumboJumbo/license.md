@@ -5,7 +5,7 @@ title: License - GPLv3
 
 <!--
 GPLv3.md v1.0.2.0
-Field Training Lab (FTL)
+Field Training Facility (FTF)
 created: 20 Feb 2022
 updated: 
 -->
