@@ -22,12 +22,12 @@ The Field Training Facility provides a training method that consumes electric ch
 - The code currently only works with the first eight kerbals in a part.  
 ***
 ![Field Training Facility][IMG:hero:1]  
-If you are in a hurry and just want to 'download' experience into your kerbalnauts then  the [Field Training Lab][thread:FTL] will be the answer for you. The Field Training Lab (FTL) consumes Science and Electric Charge in order to train (school) your kerbalnauts. 
+If you are in a hurry and just want to 'download' experience into your kerbalnauts then  the [Field Training Lab][thread:FTL] will be the answer for you. The Field Training Facility (FTF) consumes Science and Electric Charge in order to train (school) your kerbalnauts. 
 ***
 ![Field Training Lab][IMG:hero:0]
 ### And you can have both installed
 > Now then, someone like me will want to use both. What happens?
-#### *Both [Field Training Facility (FTF)][thread:FTF] and [Field Training Lab (FTL)][thread:FTL] work together when you have both of them installed. Result is shown below:*
+#### *Both [Field Training Facility (FTF)][thread:FTF] and [Field Training Facility (FTF)][thread:FTL] work together when you have both of them installed. Result is shown below:*
 ![Kerbalnaut Field Training][IMG:hero:2]  
 The longer you train with FTF, the less science it costs to level immediately using the FTL.
 
@@ -49,7 +49,7 @@ More training means less science points needed, linearly.
 - [x] [Kerbal Space Program][KSP:website] [![][shield:ksp]][KSP:website] ***may*** work on other versions (YMMV)
 - [x] [Module Manager][thread:mm] [^2]
 ### Recommends  
-- [x] [Field Training Lab (FTL)][thread:FTL]  
+- [x] [Field Training Facility (FTF)][thread:FTL]  
 ## Suggests
 - [x] [On Demand Fuel Cells {ODFC)}][thread:ODFC]  
 - [x] [Field Training Facility (FTF)][thread:FTF]  
