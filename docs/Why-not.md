@@ -6,12 +6,12 @@ tags: fourty-two,42,6x7,6times7,6*7,why,why-not,page,kerbal,ksp,zer0Kerbal,zedK
 ---
 
 <!-- Why.md v1.1.0.1
-Field Training Lab (FTL)
+Field Training Facility (FTF)
 created: 01 Apr 2019
 updated: 
 -->
 
-# Field Training Lab (FTL)
+# Field Training Facility (FTF)
 
 [Home](/index.md)
 
