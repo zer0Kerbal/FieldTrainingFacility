@@ -17,7 +17,7 @@ repository:
   homepage: https://forum.kerbalspaceprogram.com/index.php?/topic/188841-*/
 
   # A comma-separated list of topics to set on the repository
-  topics: training,ftf,mod,ksp,kerbal-space-program,stars,experience,kerbal,kerbalspaceprogram,kerbal-space,training-center,ksp-mods,training-lab,kerbal-mods,training-facility,time,electriccharge,training-costs,science-laboratories,kerbal,ksp,kerbal-space-program,zedk
+  topics: training,ftf,stars,experience,kerbalspaceprogram,training-center,ksp-mods,training-lab,kerbal-mods,training-facility,time,electriccharge,training-costs,science-laboratories,kerbal,ksp,kerbal-space-program,mods,zedk
 
 # Labels: define labels for Issues and Pull Requests
 labels:
