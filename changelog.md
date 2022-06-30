@@ -10,16 +10,6 @@
 | spacedock  | (https://spacedock.info/mod/978)                                   |
 | ckan       | FieldTrainingFacility                                              |
 
-* closes #1 - modules info panels for parts in the VAB.
-* closes #6 - Suggestion: Change Mod Name to make it more distinct as to what it does.
-* updates #22 - Localization - Master
-* closes #31 - Simplified Chinese (简体中文) <zh-cn.cfg>
-* closes #23 - English <us-en.cfg>
-* updates #40 - Code Localization
-* closes #41 - Update License to GPLv3
-* closes #42 - Convert Changelog
-* closes #43 - [Bug 🐞]: Kerbalism.cfg
-* closes #44 - add docs/
 
 
 ## Version 1.2.1.0-release - `<Clean Blackboards>` edition
@@ -31,7 +21,7 @@
 
 * Update to GPLv3
   * was Expat/MIT
-* closes #32 - Update License to GPLv3
+* closes #41 - Update License to GPLv3
 
 ### docs/
 
@@ -44,14 +34,13 @@
   * [Notices.md] v1.0.0.0
   * [Why-not.md]
   * [_config.yml]
-* closes #2 - Needs a wiki
-* closes #35 - add docs/
+* closes #44 - add docs/
 
 ### Convert Changelog
 
 * Convert from .cfg to md
 * Add missing information for earlier releases
-* closes #33 - Convert Changelog
+* closes #42 - Convert Changelog
 
 ### Code
 
@@ -62,6 +51,7 @@
     * [AssemblyVersion.tt]
     * [Log.cs]
   * update [Version.tt]]
+* closes #1 - modules info panels for parts in the VAB.
 
 ### Compatibility
 
@@ -70,7 +60,7 @@
 * Update
   * licenses
   * [Kerbalism.cfg] v1.0.1.0
-    * fixes #34 - [Bug 🐞]: Kerbalism.cfg
+    * fixes #43 - [Bug 🐞]: Kerbalism.cfg
 
 ### Add
 
@@ -84,10 +74,10 @@
 * Add
   * [readme.md] v2.1.2.0
   * [quickstart.md] v1.0.1.1
-* updates #14 - English <us-en.cfg>
-* updates #13 - Localization - Master
-* updates #31 - Code Localization
-* updates #22 - Simplified Chinese (简体中文) <zh-cn.cfg>
+* updates #22 - Localization - Master
+* closes #23 - English <us-en.cfg>
+* closes #31 - Simplified Chinese (简体中文) <zh-cn.cfg>
+* updates #40 - Code Localization
 
 ### Status
 
@@ -97,13 +87,13 @@
   * closes #19 - 1.2.1.0 Verify Legal Mumbo Jumbo
   * closes #20 - 1.2.1.0 Update Documentation
   * closes #21 - 1.2.1.0 Update Social Media
+  * updates #6 - Suggestion: Change Mod Name to make it more distinct as to what it does.
 * Closes Duplicate Issues
-  * #1 - Localization
-  * #4 - :sparkles: **Localization** :sparkles:
-  * #5 - Localization - en-us.cfg (English)
-  * #6 - Localization - pt-br.cfg Brazil
-  * #7 - Localization - zh-cn.cfg - Simplified Chinese
-  * #8 - Update Field Training Facility (FTF)
+  * closes #10 - Localization
+  * closes #12 - Localization
+  * closes #13 - Localization - zh-cn.cfg - Simplified Chinese
+  * closes #14 - Localization - pt-br.cfg Brazil
+  * closes #15 - Localization - en-us.cfg (English)
 
 ---
 
