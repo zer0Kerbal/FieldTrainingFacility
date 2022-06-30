@@ -15,7 +15,7 @@ updated: 24 Jun 2022 -->
 
 This mod provides a training system (school) for your kerbalnauts by adding a *Field Training Facility* into all science laboratories.
 
-*Field Training Facility* provides a training method that consumes electric charge over time to earn a kerbal experience (stars).
+*Field Training Facility* provides a training method that consumes electric charge over time to earn kerbal experience (stars).
 
 
 
@@ -23,7 +23,7 @@ This mod provides a training system (school) for your kerbalnauts by adding a *F
 
 adopted with *express* permission and brought to you by *KerbSimpleCo*
 
-<img src="https://raw.githubusercontent.com/zer0Kerbal/FieldTrainingFacility/master/img/HeroLogo_1920x1920.png" alt="FieldTrainingFacility Hero" width="72%" height="72%">
+<img src="https://raw.githubusercontent.com/zer0Kerbal/FieldTrainingFacility/master/img/HeroLogo_1920x1920.png" alt="FieldTrainingFacility Hero" width="50%" height="50%">
 
 
 
@@ -35,7 +35,7 @@ adopted with *express* permission and brought to you by *KerbSimpleCo*
 * then [Field Training Facility][FTF] will be the answer for you.
 * The Field Training Facility (FTF) consumes `Time` and `Electric Charge` in order to train (school) your kerbalnauts.
 
-<img src="https://raw.githubusercontent.com/zer0Kerbal/FieldTrainingFacility/master/img/HeroLogo_1920x1920.png" alt="FieldTrainingFacility" width="33%" height="33%">
+<img src="https://raw.githubusercontent.com/zer0Kerbal/FieldTrainingFacility/master/img/FTF-01.png" alt="Field Training Facility Hero" width="50%" height="50%">
 
 ---
 
@@ -69,7 +69,7 @@ If you want one thing, you can install just one mod. If you install both, they w
 
 If you are in a hurry and just want to 'download' experience into your kerbalnauts then  the [Field Training Lab][FTL] will be the answer for you. The Field Training Facility (FTF) consumes Science and Electric Charge in order to train (school) your kerbalnauts.
 
-<img src="https://raw.githubusercontent.com/zer0Kerbal/FieldTrainingFacility/master/img/FTF-01.png" alt="FieldTrainingFacility Hero" width="50%" height="50%">
+<img src="https://raw.githubusercontent.com/zer0Kerbal/FieldTrainingFacility/master/img/FTF-02.png" alt="Field Training Facility Hero" width="50%" height="50%">
 
 ---
 
@@ -104,7 +104,7 @@ If you are in a hurry and just want to 'download' experience into your kerbalnau
 
 ---
 
-### Installation Directions [^2]
+### Installation Directions [^1]
 
 ***Use***
   CurseForge/OverWolf App
@@ -121,14 +121,14 @@ or [![CKAN][CKAN:img]][CKAN:url]
 
 ### Dependencies
 
-* [Kerbal Space Program][KSP:url] [![Kerbal Space Program][KSP:shd]][KSP:url] [^3]
-* Either [^4]
+* [Kerbal Space Program][KSP:url] [![Kerbal Space Program][KSP:shd]][KSP:url] [^2]
+* Either [^3]
   * [Module Manager][mm]
   * [Module Manager /L][mml]
 
 ### Recommends
 
-* [Field Training Facility (FTF)][FTF]
+* [Field Training Lab (FTL)][FTL]
 
 ### Suggests
 
@@ -308,8 +308,9 @@ Track progress: issues [here][MOD:issue] and projects [here](https://github.com/
 
 [<img align="left" alt="zer0Kerbal | kerbalspaceprogram.com" width="32px" src="https://cdn.icon-icons.com/icons2/1381/PNG/32/kerbalspaceprogram_93898.png" />][zer0Kerbal] [<img align="left" alt="zer0Kerbal | CurseForge" width="32px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/curseforge.svg" />][curseforge] [<img align="left" alt="zer0Kerbal | reddit" width="32px" src="https://cdn.icon-icons.com/icons2/1945/PNG/512/iconfinder-reddit-4661631_122483.png" />][reddit] [<img align="left" alt="zer0Kerbal | Patreon" width="32px" src="https://cdn.icon-icons.com/icons2/2429/PNG/512/patreon_logo_icon_147253.png" />][PATREON:url] [<img align="left" alt="zer0Kerbal | YouTube" width="32px" src="https://cdn.icon-icons.com/icons2/836/PNG/512/Youtube_icon-icons.com_66802.png" />][youtube] [<img align="left" alt="zer0Kerbal | Twitch" width="32px" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/twitch_logo_icon_170383.png" />][twitch] [<img align="left" alt="zer0Kerbal | PayPal" width="32px" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/paypal_logo_icon_168055.png" />][PAYPAL:url] [<img align="left" alt="zer0Kerbal | Buy Me a Coffee" width="32px" src="https://www.buymeacoffee.com/assets/img/bmc-meta-new/new/favicon.ico" />][BMCC:url] [<img align="left" alt="zer0Kerbal | Twitter" width="32px" src="https://cdn.icon-icons.com/icons2/836/PNG/32/Twitter_icon-icons.com_66803.png" />][twitter]
 
-<!-- footnotes -->
-[^1]: [KSP Wiki: Experience][wiki:xp]
-[^2]: this isn't a mod. ;P
-[^3]: ***may*** work on other versions (YMMV)
-[^4]: *Be Kind: Lithobrake, not jakebrake! Keep your Module Manager up to date!*
+---
+
+<!-- footnotes -->  
+[^1]: this isn't a mod. ;P
+[^2]: ***may*** work on other versions (YMMV)
+[^3]: *Be Kind: Lithobrake, not jakebrake! Keep your Module Manager up to date!*
