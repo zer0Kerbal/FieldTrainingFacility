@@ -12,3 +12,4 @@
 - [ManualInstallation](ManualInstallation.md)
 - [Notices](Notices.md)
 - [Why-not](Why-not.md)
+- [changelog](changelog.md)
