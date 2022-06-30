@@ -48,7 +48,17 @@
     * [InstallChecker.cs]
     * [AssemblyVersion.tt]
     * [Log.cs]
-  * update [Version.tt]]
+  * Add readonly
+    * string[] trainingArr =
+    * string[] crewListArr =
+    * float[] levelUpExpTable = { 2, 6, 8, 16, 32, 0 };
+    * string[] levelNumber = { "null", "1st", "2nd", "3rd", "4th", "5th" };
+    * ProtoCrewMember[] crewArr = new ProtoCrewMember[8];
+  * Change
+    * Version.Text to Version.SText
+  * Update
+    * function name capitalization
+  * update [Version.tt]
 * closes #1 - modules info panels for parts in the VAB.
 
 ### Compatibility
