@@ -1,8 +1,8 @@
 {
-    "NAME"           : "FieldTrainingFacility",
+    "NAME"           : "Field Training Facility (FTF)",
     "URL"            : "https://raw.githubusercontent.com/zer0Kerbal/FieldTrainingFacility/master/FieldTrainingFacility.version",
     "DOWNLOAD"       : "https://github.com/zer0Kerbal/FieldTrainingFacility/releases/latest",
-    "CHANGE_LOG_URL" : "https://raw.githubusercontent.com/zer0Kerbal/FieldTrainingFacility/master/Changelog.cfg",
+    "CHANGE_LOG_URL" : "https://raw.githubusercontent.com/zer0Kerbal/FieldTrainingFacility/master/changelog.md",
     "GITHUB" :
     {
         "USERNAME"          : "zer0Kerbal",
