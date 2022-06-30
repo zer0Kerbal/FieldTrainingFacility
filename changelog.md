@@ -10,6 +10,18 @@
 | spacedock  | (https://spacedock.info/mod/978)                                   |
 | ckan       | FieldTrainingFacility                                              |
 
+* closes #1 - modules info panels for parts in the VAB.
+* closes #6 - Suggestion: Change Mod Name to make it more distinct as to what it does.
+* updates #22 - Localization - Master
+* closes #31 - Simplified Chinese (简体中文) <zh-cn.cfg>
+* closes #23 - English <us-en.cfg>
+* updates #40 - Code Localization
+* closes #41 - Update License to GPLv3
+* closes #42 - Convert Changelog
+* closes #43 - [Bug 🐞]: Kerbalism.cfg
+* closes #44 - add docs/
+
+
 ## Version 1.2.1.0-release - `<Clean Blackboards>` edition
 
 * 28 Jun 2022
@@ -80,10 +92,11 @@
 ### Status
 
 * Issues
-  * closes #9 - Field Training Facility (FTF) 1.2.1.0-release `<EDITION>`
-  * closes #10 - 1.2.1.0 Verify Legal Mumbo Jumbo
-  * closes #11 - 1.2.1.0 Update Documentation
-  * closes #12 - 1.2.1.0 Update Social Media
+  * closes #16 - Update Field Training Facility (FTF)
+  * closes #18 - Field Training Facility (FTF) 1.2.1.0-release - `<Clean Blackboards>` edition
+  * closes #19 - 1.2.1.0 Verify Legal Mumbo Jumbo
+  * closes #20 - 1.2.1.0 Update Documentation
+  * closes #21 - 1.2.1.0 Update Social Media
 * Closes Duplicate Issues
   * #1 - Localization
   * #4 - :sparkles: **Localization** :sparkles:
