@@ -67,8 +67,10 @@
   * Patches to Compatibility
 * Update
   * licenses
-  * [Kerbalism.cfg] v1.0.1.0
+  * [Kerbalsim.cfg] to [Kerbalism.cfg] v1.1.1.0
     * fixes #43 - [Bug 🐞]: Kerbalism.cfg
+  * [FieldTrainingFacility.cfg] v1.1.1.0
+    * update :NEEDS
 
 ### Add
 
