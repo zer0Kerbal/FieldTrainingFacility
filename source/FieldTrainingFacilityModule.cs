@@ -429,17 +429,17 @@ namespace FieldTrainingFacility
             //? The config is only fully parsed after everything is fully loaded (which is why it's in OnStart())
             if (info == string.Empty)
             {   
-                info += Localizer.Format("#FieldTrainingFacility_manu"); // #FieldTrainingFacility_manu = Kerbalnaut Training Industries, Inc.
+                info += Localizer.Format("#FTF-manu"); // #FTF-manu = Kerbalnaut Training Industries, Inc.
                 info += "\n v" + Version.SText; // FTF Version Number text
-                info += "\n<color=#b4d455FF>" + Localizer.Format("#FieldTrainingFacility_desc"); // #FieldTrainingFacility_desc = Train Kerbals using time and Electric Charge
+                info += "\n<color=#b4d455FF>" + Localizer.Format("#FTF-desc"); // #FTF-desc = Train Kerbals using time and Electric Charge
                 info += "\n\n<color=orange>Requires:</color> \n - <color=white><b>" + Localizer.Format("#autoLOC_252004"); // #autoLOC_252004 = ElectricCharge
                 info += "</b>: \n <color=#99FF00FF>  - Per Crew: </b></color><color=white>" + RateString(ECFactor) + " </color>";
                 info += "</b>: \n <color=#99FF00FF>  - Max Crew: </b></color><color=white>" + RateString(maxCrew * ECFactor) + "</color>";
             }
             // #autoLOC_252004 = ElectricCharge
-            // #FieldTrainingFacility_titl = FieldTrainingFacility
-            // #FieldTrainingFacility_manu = Kerbalnaut Training Industries, Inc.
-            // #FieldTrainingFacility_desc = Train Kerbals using time and Electric Charge
+            // #FTF-titl = FieldTrainingFacility
+            // #FTF-manu = Kerbalnaut Training Industries, Inc.
+            // #FTF-desc = Train Kerbals using time and Electric Charge
             return info;
         }
     }
