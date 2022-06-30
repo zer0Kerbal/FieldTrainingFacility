@@ -300,11 +300,6 @@ or [![CKAN][CKAN:img]][CKAN:url]
 [efour]: https://forum.kerbalspaceprogram.com/index.php?/profile/152350-*/ "Efour"
 [zer0Kerbal]: https://forum.kerbalspaceprogram.com/index.php?/profile/190933-*/ "zer0Kerbal"
 
-<!-- footnotes -->  
-[^1]: this isn't a mod. ;P
-[^2]: ***may*** work on other versions (YMMV)
-[^3]: *Be Kind: Lithobrake, not jakebrake! Keep your Module Manager up to date!*
-
 ---
 
 #### Connect with me
@@ -312,3 +307,10 @@ or [![CKAN][CKAN:img]][CKAN:url]
 Track progress: issues [here][MOD:issue] and projects [here](https://github.com/zer0Kerbal/FieldTrainingFacility/projects/) along with **[The Short List](https://github.com/users/zer0Kerbal/projects/27)**
 
 [<img align="left" alt="zer0Kerbal | kerbalspaceprogram.com" width="32px" src="https://cdn.icon-icons.com/icons2/1381/PNG/32/kerbalspaceprogram_93898.png" />][zer0Kerbal] [<img align="left" alt="zer0Kerbal | CurseForge" width="32px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/curseforge.svg" />][curseforge] [<img align="left" alt="zer0Kerbal | reddit" width="32px" src="https://cdn.icon-icons.com/icons2/1945/PNG/512/iconfinder-reddit-4661631_122483.png" />][reddit] [<img align="left" alt="zer0Kerbal | Patreon" width="32px" src="https://cdn.icon-icons.com/icons2/2429/PNG/512/patreon_logo_icon_147253.png" />][PATREON:url] [<img align="left" alt="zer0Kerbal | YouTube" width="32px" src="https://cdn.icon-icons.com/icons2/836/PNG/512/Youtube_icon-icons.com_66802.png" />][youtube] [<img align="left" alt="zer0Kerbal | Twitch" width="32px" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/twitch_logo_icon_170383.png" />][twitch] [<img align="left" alt="zer0Kerbal | PayPal" width="32px" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/paypal_logo_icon_168055.png" />][PAYPAL:url] [<img align="left" alt="zer0Kerbal | Buy Me a Coffee" width="32px" src="https://www.buymeacoffee.com/assets/img/bmc-meta-new/new/favicon.ico" />][BMCC:url] [<img align="left" alt="zer0Kerbal | Twitter" width="32px" src="https://cdn.icon-icons.com/icons2/836/PNG/32/Twitter_icon-icons.com_66803.png" />][twitter]
+
+---
+
+<!-- footnotes -->  
+[^1]: this isn't a mod. ;P
+[^2]: ***may*** work on other versions (YMMV)
+[^3]: *Be Kind: Lithobrake, not jakebrake! Keep your Module Manager up to date!*
