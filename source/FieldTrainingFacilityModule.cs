@@ -1,4 +1,23 @@
-﻿using System;
+﻿/* Field Training Facility (FTF)
+ * Kerbals gain experience (stars) using time and electric charge. For Kerbal Space Program.
+ * Copyright (C) 2016 EFour
+ * Copyright (C) 2019, 2022 zer0Kerbal (zer0Kerbal at hotmail dot com)
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +31,7 @@ namespace FieldTrainingFacility
 {
     public class FieldTrainingFacility : PartModule
     {
-        string[] trainingArr =
+        readonly string[] trainingArr =
         {
             "",
             "Training1",
@@ -22,7 +41,7 @@ namespace FieldTrainingFacility
             "Training5"
         };
 
-        string[] crewListArr =
+        readonly string[] crewListArr =
         {
             "BoardKerbal0",
             "BoardKerbal1",
@@ -34,11 +53,11 @@ namespace FieldTrainingFacility
             "BoardKerbal7"
         };
 
-        float[] levelUpExpTable = { 2, 6, 8, 16, 32, 0 };
+        readonly float[] levelUpExpTable = { 2, 6, 8, 16, 32, 0 };
 
-        string[] levelNumber = { "null", "1st", "2nd", "3rd", "4th", "5th" };
+        readonly string[] levelNumber = { "null", "1st", "2nd", "3rd", "4th", "5th" };
 
-        ProtoCrewMember[] crewArr = new ProtoCrewMember[8];
+        readonly ProtoCrewMember[] crewArr = new ProtoCrewMember[8];
         int crewCnt = 0,
             maxCrew = 0;
 
@@ -54,7 +73,7 @@ namespace FieldTrainingFacility
         [KSPField]
         public float LandedFactor = 6f;
 
-        [KSPField(isPersistant = true, guiActive = true, guiName = "Training Status", groupName = "Training", groupDisplayName = "Training Facility " + Version.Text, groupStartCollapsed = true)]
+        [KSPField(isPersistant = true, guiActive = true, guiName = "Training Status", groupName = "Training", groupDisplayName = "Training Facility " + Version.SText, groupStartCollapsed = true)]
         public bool TrainingStatus = false;
 
         [KSPField(isPersistant = true)]
@@ -69,7 +88,7 @@ namespace FieldTrainingFacility
                 LastTimeSigniture = Planetarium.GetUniversalTime();
                 Events["ToggleTraining"].guiName = "Stop Training";
             }
-            else stopTraining();
+            else StopTraining();
         }
 
         [KSPField(guiActive = false, groupName = "Training")]
@@ -101,9 +120,9 @@ namespace FieldTrainingFacility
         {
             if (TrainingStatus == true)
             {
-                if (consumeEC(crewCnt, TimeWarp.fixedDeltaTime) == false)
+                if (ConsumeEC(crewCnt, TimeWarp.fixedDeltaTime) == false)
                 {
-                    stopTraining();
+                    StopTraining();
                     ScreenMessages.PostScreenMessage("Electric Charge Depleted. Stopping Training.");
                 }
             }
@@ -126,49 +145,49 @@ namespace FieldTrainingFacility
                     crewArr[index] = crew;
                     expStrArr[index] = "";
 
-                    int crewLevel = getCrewTrainedLevel(crew);
+                    int crewLevel = GetCrewTrainedLevel(crew);
                     if (crewLevel < 5)
                     {
                         // calculating exp section
-                        double exp = getKerbalTrainingExp(crew);
-                        exp += calculateExp(vessel, nowTime - LastTimeSigniture);
+                        double exp = GetKerbalTrainingExp(crew);
+                        exp += CalculateExp(vessel, nowTime - LastTimeSigniture);
 
                         // crew leveling section
-                        if (getCrewTrainedLevel(crew) == 0 && exp > TimeFactor * levelUpExpTable[0] / 64)
+                        if (GetCrewTrainedLevel(crew) == 0 && exp > TimeFactor * levelUpExpTable[0] / 64)
                         {
-                            setCrewTrainingLevel(crew, 1);
+                            SetCrewTrainingLevel(crew, 1);
                             exp -= TimeFactor * levelUpExpTable[0] / 64;
                         }
-                        if (getCrewTrainedLevel(crew) == 1 && exp > TimeFactor * levelUpExpTable[1] / 64)
+                        if (GetCrewTrainedLevel(crew) == 1 && exp > TimeFactor * levelUpExpTable[1] / 64)
                         {
-                            setCrewTrainingLevel(crew, 2);
+                            SetCrewTrainingLevel(crew, 2);
                             exp -= TimeFactor * levelUpExpTable[1] / 64;
                         }
-                        if (getCrewTrainedLevel(crew) == 2 && exp > TimeFactor * levelUpExpTable[2] / 64)
+                        if (GetCrewTrainedLevel(crew) == 2 && exp > TimeFactor * levelUpExpTable[2] / 64)
                         {
-                            setCrewTrainingLevel(crew, 3);
+                            SetCrewTrainingLevel(crew, 3);
                             exp -= TimeFactor * levelUpExpTable[2] / 64;
                         }
-                        if (getCrewTrainedLevel(crew) == 3 && exp > TimeFactor * levelUpExpTable[3] / 64)
+                        if (GetCrewTrainedLevel(crew) == 3 && exp > TimeFactor * levelUpExpTable[3] / 64)
                         {
-                            setCrewTrainingLevel(crew, 4);
+                            SetCrewTrainingLevel(crew, 4);
                             exp -= TimeFactor * levelUpExpTable[3] / 64;
                         }
-                        if (getCrewTrainedLevel(crew) == 4 && exp > TimeFactor * levelUpExpTable[4] / 64)
+                        if (GetCrewTrainedLevel(crew) == 4 && exp > TimeFactor * levelUpExpTable[4] / 64)
                         {
-                            setCrewTrainingLevel(crew, 5);
+                            SetCrewTrainingLevel(crew, 5);
                             exp -= TimeFactor * levelUpExpTable[4] / 64;
                         }
                         
-                        if (getCrewTrainedLevel(crew) < 5)
+                        if (GetCrewTrainedLevel(crew) < 5)
                         {
-                            setKerbalTrainingExp(crew, exp);
+                            SetKerbalTrainingExp(crew, exp);
                             expStrArr[index] = " (" + (exp * 100 / (TimeFactor * levelUpExpTable[crewLevel] / 64)).ToString("F2") + "%)";
                         }
-                        else removeKerbalTrainingExp(crew);
+                        else RemoveKerbalTrainingExp(crew);
                     }
 
-                    Fields[crewListArr[index]].guiName = "Lv" + getCrewTrainedLevel(crew);
+                    Fields[crewListArr[index]].guiName = "Lv" + GetCrewTrainedLevel(crew);
                     Fields[crewListArr[index]].guiActive = true;
 
                     index++;
@@ -207,21 +226,21 @@ namespace FieldTrainingFacility
                     crewArr[index] = crew;
                     expStrArr[index] = "";
 
-                    int crewLevel = getCrewTrainedLevel(crew);
+                    int crewLevel = GetCrewTrainedLevel(crew);
                     if (crewLevel < 5)
                     {
                         // calculating exp section
-                        double exp = getKerbalTrainingExp(crew);
+                        double exp = GetKerbalTrainingExp(crew);
 
-                        if (getCrewTrainedLevel(crew) < 5)
+                        if (GetCrewTrainedLevel(crew) < 5)
                         {
-                            setKerbalTrainingExp(crew, exp);
+                            SetKerbalTrainingExp(crew, exp);
                             expStrArr[index] = " (" + (exp * 100 / (TimeFactor * levelUpExpTable[crewLevel] / 64)).ToString("F2") + "%)";
                         }
-                        else removeKerbalTrainingExp(crew);
+                        else RemoveKerbalTrainingExp(crew);
                     }
 
-                    Fields[crewListArr[index]].guiName = "Lv" + getCrewTrainedLevel(crew);
+                    Fields[crewListArr[index]].guiName = "Lv" + GetCrewTrainedLevel(crew);
                     Fields[crewListArr[index]].guiActive = true;
 
                     index++;
@@ -247,7 +266,7 @@ namespace FieldTrainingFacility
             base.OnUpdate();
         }
 
-        private void stopTraining()
+        private void StopTraining()
         {
             TrainingStatus = false;
 
@@ -265,7 +284,8 @@ namespace FieldTrainingFacility
             Events["ToggleTraining"].guiName = "Start Training";
         }
 
-        private int getCrewTrainedLevel(ProtoCrewMember crew)
+
+        private int GetCrewTrainedLevel(ProtoCrewMember crew)
         {
             int lastLog = 0;
             FlightLog totalLog = crew.careerLog.CreateCopy();
@@ -290,13 +310,13 @@ namespace FieldTrainingFacility
             return lastLog;
         }
 
-        private void setCrewTrainingLevel(ProtoCrewMember crew, int level)
+        private void SetCrewTrainingLevel(ProtoCrewMember crew, int level)
         {
             crew.flightLog.AddEntry(new FlightLog.Entry(crew.flightLog.Flight, trainingArr[level], "Kerbin"));
             ScreenMessages.PostScreenMessage(levelNumber[level] + " Training Complete : " + crew.name);
         }
 
-        private double getKerbalTrainingExp(ProtoCrewMember crew)
+        private double GetKerbalTrainingExp(ProtoCrewMember crew)
         {
             string lastExpStr = "0";
 
@@ -314,7 +334,7 @@ namespace FieldTrainingFacility
             {
                 if (entry.type == "TrainingExp")
                 {
-                    if (entry.flight <= deadFlight) removeKerbalTrainingExp(crew);
+                    if (entry.flight <= deadFlight) RemoveKerbalTrainingExp(crew);
                     else lastExpStr = entry.target;
                 }
             }
@@ -322,7 +342,7 @@ namespace FieldTrainingFacility
             return double.Parse(lastExpStr);
         }
 
-        private void removeKerbalTrainingExp(ProtoCrewMember crew)
+        private void RemoveKerbalTrainingExp(ProtoCrewMember crew)
         {
             foreach (FlightLog.Entry entry in crew.careerLog.Entries.ToArray())
                 if (entry.type == "TrainingExp")
@@ -332,21 +352,21 @@ namespace FieldTrainingFacility
                     crew.flightLog.Entries.Remove(entry);
         }
 
-        private void setKerbalTrainingExp(ProtoCrewMember crew, double exp)
+        private void SetKerbalTrainingExp(ProtoCrewMember crew, double exp)
         {
-            removeKerbalTrainingExp(crew);
+            RemoveKerbalTrainingExp(crew);
 
             crew.flightLog.Entries.Add(new FlightLog.Entry(crew.flightLog.Flight, "TrainingExp", exp.ToString()));
         }
 
-        private double calculateExp(Vessel vessel, double elapsed)
+        private double CalculateExp(Vessel vessel, double elapsed)
         {
             if (this.vessel.mainBody.bodyName == "Kerbin" && this.vessel.LandedOrSplashed) return elapsed;
             else if (this.vessel.LandedOrSplashed) return elapsed * LandedFactor;
             else return elapsed * SpaceFactor;
         }
 
-        public bool consumeEC(int numCrew, double elapsed)
+        public bool ConsumeEC(int numCrew, double elapsed)
         {
             if (CheatOptions.InfiniteElectricity == true) return true;
 
@@ -409,17 +429,17 @@ namespace FieldTrainingFacility
             //? The config is only fully parsed after everything is fully loaded (which is why it's in OnStart())
             if (info == string.Empty)
             {   
-                info += Localizer.Format("#FieldTrainingFacility_manu"); // #FieldTrainingFacility_manu = Kerbalnaut Training Industries, Inc.
-                info += "\n v" + Version.Text; // FTF Version Number text
-                info += "\n<color=#b4d455FF>" + Localizer.Format("#FieldTrainingFacility_desc"); // #FieldTrainingFacility_desc = Train Kerbals using time and Electric Charge
+                info += Localizer.Format("#FTF-manu"); // #FTF-manu = Kerbalnaut Training Industries, Inc.
+                info += "\n v" + Version.SText; // FTF Version Number text
+                info += "\n<color=#b4d455FF>" + Localizer.Format("#FTF-desc"); // #FTF-desc = Train Kerbals using time and Electric Charge
                 info += "\n\n<color=orange>Requires:</color> \n - <color=white><b>" + Localizer.Format("#autoLOC_252004"); // #autoLOC_252004 = ElectricCharge
                 info += "</b>: \n <color=#99FF00FF>  - Per Crew: </b></color><color=white>" + RateString(ECFactor) + " </color>";
                 info += "</b>: \n <color=#99FF00FF>  - Max Crew: </b></color><color=white>" + RateString(maxCrew * ECFactor) + "</color>";
             }
             // #autoLOC_252004 = ElectricCharge
-            // #FieldTrainingFacility_titl = FieldTrainingFacility
-            // #FieldTrainingFacility_manu = Kerbalnaut Training Industries, Inc.
-            // #FieldTrainingFacility_desc = Train Kerbals using time and Electric Charge
+            // #FTF-titl = FieldTrainingFacility
+            // #FTF-manu = Kerbalnaut Training Industries, Inc.
+            // #FTF-desc = Train Kerbals using time and Electric Charge
             return info;
         }
     }
