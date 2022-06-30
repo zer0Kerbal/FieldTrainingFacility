@@ -15,7 +15,7 @@ updated: 24 Jun 2022 -->
 
 This mod provides a training system (school) for your kerbalnauts by adding a *Field Training Facility* into all science laboratories.
 
-*Field Training Facility* provides a training method that consumes electric charge over time to earn a kerbal experience (stars).
+*Field Training Facility* provides a training method that consumes electric charge over time to earn kerbal experience (stars).
 
 
 
@@ -23,7 +23,7 @@ This mod provides a training system (school) for your kerbalnauts by adding a *F
 
 adopted with *express* permission and brought to you by *KerbSimpleCo*
 
-<img src="https://raw.githubusercontent.com/zer0Kerbal/FieldTrainingFacility/master/img/HeroLogo_1920x1920.png" alt="FieldTrainingFacility Hero" width="72%" height="72%">
+<img src="https://raw.githubusercontent.com/zer0Kerbal/FieldTrainingFacility/master/img/HeroLogo_1920x1920.png" alt="FieldTrainingFacility Hero" width="50%" height="50%">
 
 
 
