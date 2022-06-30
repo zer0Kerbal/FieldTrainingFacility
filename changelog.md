@@ -10,8 +10,6 @@
 | spacedock  | (https://spacedock.info/mod/978)                                   |
 | ckan       | FieldTrainingFacility                                              |
 
-
-
 ## Version 1.2.1.0-release - `<Clean Blackboards>` edition
 
 * 28 Jun 2022
@@ -94,6 +92,10 @@
   * closes #13 - Localization - zh-cn.cfg - Simplified Chinese
   * closes #14 - Localization - pt-br.cfg Brazil
   * closes #15 - Localization - en-us.cfg (English)
+* PR's
+  * #7 - 1.2.0.0 - contributed by zer0Kerbal
+  * #9 - Kerbalism Compatibility Resolves #8 - contributed by girotobial
+  * #17 - Simplified chinese localization - contributed by zer0Kerbal
 
 ---
 
