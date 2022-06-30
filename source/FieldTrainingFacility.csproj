@@ -1,41 +1,54 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="17.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{F1E7665D-05FE-4267-85E8-FDA6D510628E}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FieldTrainingFacility</RootNamespace>
+    <NoStandardLibraries>false</NoStandardLibraries>
     <AssemblyName>FieldTrainingFacility</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <!-- <RootNamespace>FieldTrainingFacility</RootNamespace> -->
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <LangVersion>latest</LangVersion>>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\GameData\FieldTrainingFacility\Plugins\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>anycpu</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>none</DebugType>
+    <DebugType>embedded</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\GameData\FieldTrainingFacility\Plugins\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>anycpu</PlatformTarget>
+    <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="$(DevDir19)\KSP_x64_Data\Managed\Assembly-CSharp*.dll">
+    <Reference Include="$(K112)\KSP_x64_Data\Managed\Assembly-CSharp*.dll">
       <Private>False</Private>
     </Reference>
-    <Reference Include="$(DevDir19)\KSP_x64_Data\Managed\UnityEngine*.dll">
+    <Reference Include="$(K112)\KSP_x64_Data\Managed\Assembly-CSharp-firstpass.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="$(K112)\KSP_x64_Data\Managed\UnityEngine*.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="$(K112)\KSP_x64_Data\Managed\UnityEngine.UI.dll">
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -47,55 +60,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Log.cs" />
-    <Compile Include="InstallChecker.cs" />
+    <Compile Include="Settings.cs" />
     <Compile Include="FieldTrainingFacilityModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\AssemblyVersion.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AssemblyVersion.tt</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Version.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Version.tt</DependentUpon>
     </Compile>
-    <Compile Include="Settings.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Properties\AssemblyVersion.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>AssemblyVersion.cs</LastGenOutput>
-    </Content>
     <Content Include="Properties\Version.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Version.cs</LastGenOutput>
     </Content>
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
-       Other similar extension points exist, see Microsoft.Common.targets.
-     -->
-  <!-- <PropertyGroup> -->
-  <!-- <PreBuildEvent>set textTemplatingPath="$(DevEnvDir)texttransform.exe" -->
-  <!-- %25textTemplatingPath%25 "$(ProjectDir)AssemblyVersion.tt"</PreBuildEvent> -->
-  <!-- </PropertyGroup> -->
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v17.0\TextTemplating\Microsoft.TextTemplating.targets" />
   <PropertyGroup>
-    <PreBuildEvent>
-    cmd /d C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\texttransform.exe "$(ProjectDir)Properties\Version.tt"
-    cmd /d C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\texttransform.exe "$(ProjectDir)Properties\AssemblyFileVersion.tt"
-    <!-- "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\texttransform.exe"  --><!-- "$(ProjectDir)Properties\AssemblyFileVersion.tt" --></PreBuildEvent>
+    <PreBuildEvent>"$(DevEnvDir)\TextTransform.exe" "$(ProjectDir)Properties\Version.tt" 
+    </PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>start /D $(ProjectDir)..\  /WAIT _deploy.bat  $(TargetDir) $(TargetFileName)
-if $(ConfigurationName) == Release start /D $(ProjectDir)..\   /WAIT _buildRelease.bat $(TargetDir) $(TargetFileName)</PostBuildEvent>
+    <PostBuildEvent>
+set K112=$(K112)
+IF "%25K112%25"=="" (
+	ECHO Configuration error - K112 not specified in project.
+	ECHO Either set K100 environment variable
+	PAUSE
+	rem GOTO DONE
+)
+start /D $(ProjectDir)..\  /WAIT _deploy.bat  $(TargetDir) $(TargetFileName)
+if $(ConfigurationName) == Release start /D $(ProjectDir)..\   /WAIT _buildRelease.bat $(TargetDir) $(TargetFileName)
+del $(TargetDir)\*.tmp
+:DONE
+  </PostBuildEvent>
   </PropertyGroup>
-  <!--<Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>-->
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <Policies>
+          <TextStylePolicy TabWidth="4" IndentWidth="4" RemoveTrailingWhitespace="True" NoTabsAfterNonTabs="False" EolMarker="Native" FileWidth="132" TabsToSpaces="False" scope="text/plain" />
+        </Policies>
+      </Properties>
+    </MonoDevelop>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
 </Project>
