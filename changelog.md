@@ -10,6 +10,39 @@
 | spacedock  | (https://spacedock.info/mod/978)                                   |
 | ckan       | FieldTrainingFacility                                              |
 
+## Version 1.2.1.1-release <LatiMacciato> edition
+
+* 03 Jul 2022
+* For Kerbal Space Program [1.12.x]
+
+### NOTICE
+
+The 1.2.x.x-releases are the final versions of this addon.
+Both *Field Training Lab* and *Field Training Facility*'s plugins (.dll) will be merged into one plugin.
+Both part modules will remain in the addon and this improvement *should not* affect existing save games.
+
+### Compatibility
+
+* [FieldTrainingFacility.cfg]
+  * wrong :NEEDS
+    * is
+      * @part[*]:HAS[@module[ModuleScienceLab]]:NEEDS[FieldTrainingLab]:FOR[FieldTrainingFacility]
+      * should be
+        * @part[*]:HAS[@module[ModuleScienceLab]]:NEEDS[FieldTrainingFacility]:FOR[FieldTrainingFacility]
+  * Thank you to forum user [LatiMacciato](https://forum.kerbalspaceprogram.com/index.php?/profile/165597-latimacciato/) for pointing out the finger dyslexia issue.
+  * closes #48 - [Bug 🐞]: [FieldTrainingFacility.cfg] wrong :NEEDS
+
+### Status
+
+* Issues
+  * closes #52 - 1.2.1.1 Update Social Media
+  * closes #51 - 1.2.1.1 Update Documentation
+  * closes #50 - 1.2.1.1 Verify Legal Mumbo Jumbo
+  * closes #49 - Field Training Facility (FTF) 1.2.1.1-release `<LatiMacciato>`
+  * closes #47 - Update License to GPLv3
+
+---
+
 ## Version 1.2.1.0-release - `<Clean Blackboards>` edition
 
 * 28 Jun 2022
@@ -19,7 +52,7 @@
 
 * Update to GPLv3
   * was Expat/MIT
-* closes #41 - Update License to GPLv3
+* closes #47 - Update License to GPLv3
 
 ### docs/
 
