@@ -23,7 +23,7 @@ Both part modules will remain in the addon and this improvement *should not* aff
 
 ### Compatibility
 
-* [FieldTrainingFacility.cfg]
+* [FieldTrainingFacility.cfg] v1.1.2.0
   * wrong :NEEDS
     * is
       * @part[*]:HAS[@module[ModuleScienceLab]]:NEEDS[FieldTrainingLab]:FOR[FieldTrainingFacility]
