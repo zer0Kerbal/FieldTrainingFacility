@@ -9,7 +9,7 @@
     <NoStandardLibraries>false</NoStandardLibraries>
     <AssemblyName>FieldTrainingLab</AssemblyName>
     <!-- <RootNamespace>FieldTrainingLab</RootNamespace> -->
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <LangVersion>latest</LangVersion>
