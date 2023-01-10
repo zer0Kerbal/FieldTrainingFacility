@@ -2,7 +2,7 @@
  "schemaVersion": 1,
  "label": "Code",
  "labelColor": "66ccff",
- "message": "'<.NET 4.6.1'>' '<'Module Manager'>'  '<'C# 6.0'>'",
+ "message": "<.NET 4.7.2> <Module Manager> <C# 7.0>",
  "color": "darkblue",
  "style": "plastic"
 }
