@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FieldTrainingFacility</name>
+    </assembly>
+    <members>
+        <member name="M:FieldTrainingFacility.FieldTrainingFacility.RateString(System.Double)">
+            <summary>Converts consumption rate into /s /m /hour and returns a formate string.</summary>
+            <param name="Rate">The rate.</param>
+            <returns>RateString="Rate"</returns>
+        </member>
+        <member name="F:FieldTrainingFacility.FieldTrainingFacility.info">
+            <summary>Module information shown in editors</summary>
+        </member>
+        <member name="T:FieldTrainingFacility.Version">
+            <summary>Version - retrieved at compile from FieldTrainingFacility.version</summary>
+        </member>
+        <member name="F:FieldTrainingFacility.Version.major">
+            <summary>Major revision</summary>
+        </member>
+        <member name="F:FieldTrainingFacility.Version.minor">
+            <summary>Minor revision</summary>
+        </member>
+        <member name="F:FieldTrainingFacility.Version.patch">
+            <summary>Patch revision</summary>
+        </member>
+        <member name="F:FieldTrainingFacility.Version.build">
+            <summary>Build revision</summary>
+        </member>
+        <member name="F:FieldTrainingFacility.Version.Number">
+            <summary>Version String const</summary>
+        </member>
+        <member name="F:FieldTrainingFacility.Version.Text">
+            <summary>Text Version String const</summary>
+        </member>
+        <member name="F:FieldTrainingFacility.Version.SText">
+            <summary>Plain Text Version String const</summary>
+        </member>
+    </members>
+</doc>
