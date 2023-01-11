@@ -2,7 +2,7 @@
   
 | modName    | Field Training Facility (FTF)                                      |
 | ---------- | ------------------------------------------------------------------ |
-| license    | GPLv3                                                              |
+| license    | GPL-3.0                                                            |
 | author     | Efour and zer0Kerbal                                               |
 | forum      | (https://forum.kerbalspaceprogram.com/index.php?/topic/188841-*/)  |
 | github     | (https://github.com/zer0Kerbal/zer0Kerbal/FieldTrainingFacility)   |
