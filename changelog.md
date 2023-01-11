@@ -10,6 +10,49 @@
 | spacedock  | (https://spacedock.info/mod/978)                                   |
 | ckan       | FieldTrainingFacility                                              |
 
+## Version 1.2.2.0-release `<Thank you Efour>` edition
+
+* Released
+  * 10 Jan 2023
+  * Release for Kerbal Space Program 1.12.4
+  * by [zer0Kerbal](https://github.com/zer0Kerbal)
+
+### Summary 1.2.3.0
+
+* Recompiled for 1.12.4 with .NET 4.7.2 using C# 7.0
+
+### Changes 1.2.3.0
+
+#### Code 1.2.3.0
+
+* Recompile for
+  * KSP 1.12.2
+  * .Net 4.7.2
+  * C# 7.0
+  * <FieldTrainingFacility.dll> v1.2.1.3 --> 1.2.2.5
+
+#### Localization 1.2.3.0
+
+* Code is localized.
+  * <en-us.cfg> 1.0.2.0
+  * <zh-cn.cfg> v1.0.1.0
+  * add tags
+* updates #22 - Localization - Master
+* closes #40 - Code Localization
+
+#### Config 1.2.3.0
+
+* lint and update patches
+* add tags to parts
+
+#### Status 1.2.3.0
+
+* Issues
+  * closes #55 - Field Training Facility (FTF) 1.2.2.0-release `<Thank you Efour>` edition
+  * closes #56 - 1.2.2.0 Additional Tasks
+
+---
+
 ## Version 1.2.1.1-release <LatiMacciato> edition
 
 * 03 Jul 2022
