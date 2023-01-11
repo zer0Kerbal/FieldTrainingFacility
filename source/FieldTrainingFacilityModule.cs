@@ -429,7 +429,7 @@ namespace FieldTrainingFacility
             //? The config is only fully parsed after everything is fully loaded (which is why it's in OnStart())
             if (info == string.Empty)
             {   
-                info += Localizer.Format("#FTF-Agency-title"); // #FTF-manu = Kerbalnaut Training Industries, Inc.
+                info += Localizer.Format("#FTF-Agency-titl"); // #FTF-manu = Kerbalnaut Training Industries, Inc.
                 info += "\n v" + Version.SText; // FTF Version Number text
                 info += "\n<color=#b4d455FF>" + Localizer.Format("#FTF-desc"); // #FTF-desc = Train Kerbals using time and Electric Charge
                 info += "\n\n<color=orange>Requires:</color> \n - <color=white><b>" + Localizer.Format("#autoLOC_252004"); // #autoLOC_252004 = ElectricCharge
