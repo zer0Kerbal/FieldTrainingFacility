@@ -41,7 +41,7 @@ CC BY-ND 4.0 by zer0Kerbal
   * KSP 1.12.2
   * .Net 4.7.2
   * C# 7.0
-  * <FieldTrainingFacility.dll> v1.2.1.3 --> 1.2.2.5
+  * <FieldTrainingFacility.dll> v1.2.1.3 --> 1.2.2.9
 
 #### Localization 1.2.3.0
 
