@@ -7,12 +7,12 @@ tags: disclaimer,questions,page,kerbal,ksp,zer0Kerbal,zedK
 ---
 
 <!-- Disclaimer.md v1.0.0.1
-MOD-NAME (ABBV)
+Field Training Facility (FTF)
 created: 01 Apr 2022
 updated: 
 -->
 
-# MOD-NAME (ABBV)
+# Field Training Facility (FTF)
 
 [Home](/index.md)
 
