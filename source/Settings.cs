@@ -1,7 +1,7 @@
 ﻿/* Field Training Facility (FTF)
  * Kerbals gain experience (stars) using time and electric charge. For Kerbal Space Program.
  * Copyright (C) 2016 EFour
- * Copyright (C) 2019, 2022 zer0Kerbal (zer0Kerbal at hotmail dot com)
+ * Copyright (C) 2019, 2022, 2023 zer0Kerbal (zer0Kerbal at hotmail dot com)
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
