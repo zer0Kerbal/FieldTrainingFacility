@@ -1,15 +1,15 @@
 ---
 permalink: /License.html
-title: License - GPLv3
+title: License - GPL-3.0
 ---
 
 <!--
-GPLv3.md v1.0.2.0
+GPL-3.0.md v1.0.2.0
 Field Training Facility (FTF)
 created: 20 Feb 2022
-updated: 
+updated: 04 Aug 2022
 -->
-<img src="https://www.gnu.org/graphics/gplv3-127x51.png" alt=" [GPLv3 Logo] " style="zoom:75%;" />
+<img src="https://www.gnu.org/graphics/gplv3-127x51.png" alt=" [GPL-3.0 Logo] " style="zoom:75%;" />
 
 # GNU General Public License version 3
 
@@ -22,8 +22,6 @@ License Contact: Free Software Foundation ([fsf.org](https://fsf.org/)).
 SPDX short identifier: GPL-3.0-only
 
 Further resources...
-
- 
 
 ------
 

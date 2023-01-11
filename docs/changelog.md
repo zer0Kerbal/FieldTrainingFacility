@@ -2,10 +2,8 @@
 permalink: /Changelog.html
 title: The Change Log
 description: The Opening Credits, and the closing credits, plus the first of two (or is three) end credit scenes
-# layout: bare
 tags: changes,changelog,change-log,page,kerbal,ksp,zer0Kerbal,zedK
 ---
-
 <!-- 
 hdr-changelog.md v1.0.0.0
 Field Training Facility (FTF)
@@ -16,13 +14,56 @@ CC BY-ND 4.0 by zer0Kerbal
   
 | modName    | Field Training Facility (FTF)                                      |
 | ---------- | ------------------------------------------------------------------ |
-| license    | GPLv3                                                              |
+| license    | GPL-3.0                                                            |
 | author     | Efour and zer0Kerbal                                               |
 | forum      | (https://forum.kerbalspaceprogram.com/index.php?/topic/188841-*/)  |
 | github     | (https://github.com/zer0Kerbal/zer0Kerbal/FieldTrainingFacility)   |
 | curseforge | (https://www.curseforge.com/kerbal/ksp-mods/FieldTrainingFacility) |
 | spacedock  | (https://spacedock.info/mod/978)                                   |
 | ckan       | FieldTrainingFacility                                              |
+
+## Version 1.2.2.0-release `<Thank you Efour>` edition
+
+* Released
+  * 10 Jan 2023
+  * Release for Kerbal Space Program 1.12.4
+  * by [zer0Kerbal](https://github.com/zer0Kerbal)
+
+### Summary 1.2.3.0
+
+* Recompiled for 1.12.4 with .NET 4.7.2 using C# 7.0
+
+### Changes 1.2.3.0
+
+#### Code 1.2.3.0
+
+* Recompile for
+  * KSP 1.12.2
+  * .Net 4.7.2
+  * C# 7.0
+  * <FieldTrainingFacility.dll> v1.2.1.3 --> 1.2.2.9
+
+#### Localization 1.2.3.0
+
+* Code is localized.
+  * <en-us.cfg> 1.0.2.0
+  * <zh-cn.cfg> v1.0.1.0
+  * add tags
+* updates #22 - Localization - Master
+* closes #40 - Code Localization
+
+#### Config 1.2.3.0
+
+* lint and update patches
+* add tags to parts
+
+#### Status 1.2.3.0
+
+* Issues
+  * closes #55 - Field Training Facility (FTF) 1.2.2.0-release `<Thank you Efour>` edition
+  * closes #56 - 1.2.2.0 Additional Tasks
+
+---
 
 ## Version 1.2.1.1-release <LatiMacciato> edition
 
@@ -108,7 +149,7 @@ Both part modules will remain in the addon and this improvement *should not* aff
   * update [Version.tt]
 * closes #1 - modules info panels for parts in the VAB.
 
-### Compatibility
+### Compatibility 1.2.1.0
 
 * Rename
   * Patches to Compatibility
@@ -358,3 +399,4 @@ Both part modules will remain in the addon and this improvement *should not* aff
 * No changelog provided
 
 ---
+
