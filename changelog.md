@@ -94,7 +94,7 @@ Both part modules will remain in the addon and this improvement *should not* aff
   * update [Version.tt]
 * closes #1 - modules info panels for parts in the VAB.
 
-### Compatibility
+### Compatibility 1.2.1.0
 
 * Rename
   * Patches to Compatibility
