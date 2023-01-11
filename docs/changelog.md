@@ -65,7 +65,7 @@ CC BY-ND 4.0 by zer0Kerbal
 
 ---
 
-## Version 1.2.1.1-release <LatiMacciato> edition
+## Version 1.2.1.1-release `<LatiMacciato>` edition
 
 * 03 Jul 2022
 * For Kerbal Space Program [1.12.x]
