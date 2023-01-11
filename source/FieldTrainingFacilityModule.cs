@@ -1,7 +1,7 @@
 ﻿/* Field Training Facility (FTF)
  * Kerbals gain experience (stars) using time and electric charge. For Kerbal Space Program.
  * Copyright (C) 2016 EFour
- * Copyright (C) 2019, 2022 zer0Kerbal (zer0Kerbal at hotmail dot com)
+ * Copyright (C) 2019, 2022, 2023 zer0Kerbal (zer0Kerbal at hotmail dot com)
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -429,7 +429,7 @@ namespace FieldTrainingFacility
             //? The config is only fully parsed after everything is fully loaded (which is why it's in OnStart())
             if (info == string.Empty)
             {   
-                info += Localizer.Format("#FTF-manu"); // #FTF-manu = Kerbalnaut Training Industries, Inc.
+                info += Localizer.Format("#FTF-Agency-title"); // #FTF-manu = Kerbalnaut Training Industries, Inc.
                 info += "\n v" + Version.SText; // FTF Version Number text
                 info += "\n<color=#b4d455FF>" + Localizer.Format("#FTF-desc"); // #FTF-desc = Train Kerbals using time and Electric Charge
                 info += "\n\n<color=orange>Requires:</color> \n - <color=white><b>" + Localizer.Format("#autoLOC_252004"); // #autoLOC_252004 = ElectricCharge
@@ -437,8 +437,8 @@ namespace FieldTrainingFacility
                 info += "</b>: \n <color=#99FF00FF>  - Max Crew: </b></color><color=white>" + RateString(maxCrew * ECFactor) + "</color>";
             }
             // #autoLOC_252004 = ElectricCharge
-            // #FTF-titl = FieldTrainingFacility
-            // #FTF-manu = Kerbalnaut Training Industries, Inc.
+            // #FTF-Agency-titl = Kerbalnaut Training Industries, Inc.
+            // #FTF-titl = Field Training Facility
             // #FTF-desc = Train Kerbals using time and Electric Charge
             return info;
         }
