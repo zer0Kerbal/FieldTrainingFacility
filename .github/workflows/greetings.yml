@@ -1,6 +1,6 @@
-# 1.2.0.3
+# 1.2.2.0
 # created: 02 Dec 2021
-# updated: 01 Jan 2023
+# updated: 15 May 2026
 # An action for filtering pull requests and issues from first-time contributors.
 # https://github.com/marketplace/actions/first-interaction
 
@@ -8,14 +8,37 @@
 
 name: Greetings
 
-on: [pull_request, issues, issue_comment, discussion_comment, fork, gollum, workflow_dispatch]
+on:
+  pull_request:
+    types:
+      - opened
+  issues:
+    types:
+      - opened
 
+permissions:
+  issues: write
+  pull-requests: write
+  
 jobs:
   greeting:
+    name: Greet First-Time Contributors
     runs-on: ubuntu-latest
-    permissions:
-        issues: write
-        pull-requests: write
+    permissions: write-all
+        # actions: write
+        # actions: read|write|none
+        # checks: read|write|none
+        # contents: read|write|none
+        # deployments: read|write|none
+        # id-token: read|write|none
+        # issues: read|write|none
+        # discussions: read|write|none
+        # packages: read|write|none
+        # pages: read|write|none
+        # pull-requests: read|write|none
+        # repository-projects: read|write|none
+        # security-events: read|write|none
+        # statuses: read|write|none
     if: ${{ github.actor != 'dependabot[bot]' }}
     steps:
     # - uses: actions/first-interaction@latest
