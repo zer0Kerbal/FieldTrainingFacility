@@ -26,7 +26,7 @@
     <ConsolePause>false</ConsolePause>
     <Prefer32Bit>false</Prefer32Bit>
     <PlatformTarget>anycpu</PlatformTarget>
-		<DocumentationFile>..\..\docs\Code\Code.xml</DocumentationFile>
+		<DocumentationFile>..\docs\Code\Code.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>embedded</DebugType>
@@ -39,7 +39,7 @@
     <Prefer32Bit>false</Prefer32Bit>
     <PlatformTarget>anycpu</PlatformTarget>
     <ConsolePause>false</ConsolePause>
-		<DocumentationFile>..\..\docs\Code\Code.xml</DocumentationFile>
+		<DocumentationFile>..\docs\Code\Code.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>false</SignAssembly>
@@ -88,10 +88,9 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
-  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v17.0\TextTemplating\Microsoft.TextTemplating.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v17.0\TextTemplating\Microsoft.TextTemplating.targets" Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v17.0\TextTemplating\Microsoft.TextTemplating.targets')" />
   <PropertyGroup>
-    <PreBuildEvent>"$(DevEnvDir)\TextTransform.exe" "$(ProjectDir)Properties\Version.tt" 
-    </PreBuildEvent>
+    <PreBuildEvent Condition="Exists('$(DevEnvDir)\TextTransform.exe')">"$(DevEnvDir)\TextTransform.exe" "$(ProjectDir)Properties\Version.tt"</PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
     <PostBuildEvent>
